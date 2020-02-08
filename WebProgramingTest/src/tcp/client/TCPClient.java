@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
 
 import org.junit.Test;
 
-
+//笔记本加
 public class TCPClient {
 	public static void main(String[] args) throws UnknownHostException, IOException {
 		Socket s = new Socket("192.168.101.7", 8888);
