@@ -13,7 +13,7 @@ import org.junit.Test;
 
 public class TCPClient {
 	public static void main(String[] args) throws UnknownHostException, IOException {
-		Socket s = new Socket("192.168.1.16", 8888);
+		Socket s = new Socket("192.168.101.7", 8888);
 		InputStream in = s.getInputStream();
 		byte[] buffer = new byte[1024];
 		int length = in.read(buffer);
@@ -24,7 +24,7 @@ public class TCPClient {
 
 	@Test
 	public void fun1() throws UnknownHostException, IOException {
-		Socket socket=new Socket("192.168.1.5",8888);
+		Socket socket=new Socket("192.168.101.7",8888);
 		OutputStream out=socket.getOutputStream();
 		BufferedInputStream fileIn=new BufferedInputStream(new FileInputStream("J:\\学习\\01.讲义+笔记+资料\\01.java课件源码\\34.Oracle\\59.oracle\\oracle\\oracle_day01\\资料\\oracle安装及操作资源\\xp_oracle.zip"));
 		byte[] buffer=new byte[1024];
@@ -46,14 +46,5 @@ public class TCPClient {
 	}
 	
 	
-	@Test
-	public void f(){
-		long start = System.currentTimeMillis();
-		long time=5000;
-		int i=0;
-		while((System.currentTimeMillis()-start)<time){
-			System.out.println(i);
-			i++;
-		}
-	}
+	
 }
