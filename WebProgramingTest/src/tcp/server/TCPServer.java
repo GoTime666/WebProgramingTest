@@ -22,7 +22,7 @@ public class TCPServer {
 
 	@Test
 	public void fun1() throws IOException {
-		//Gotime2
+		//Gotime(笔记本)
 		ServerSocket serverSocket = new ServerSocket(8888);
 		Socket clientSocket = serverSocket.accept();
 		InetAddress ipObject = clientSocket.getInetAddress();
