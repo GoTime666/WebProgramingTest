@@ -31,7 +31,7 @@ public class TCPServer {
 		System.out.println("小样,抓到你了,链接我" + "IP: " + ip);
 		InputStream in = clientSocket.getInputStream();
 		// java路径要用\\或//
-		BufferedOutputStream fileOut = new BufferedOutputStream(new FileOutputStream("D:\\迅雷下载\\寄生虫.mp4"));
+		BufferedOutputStream fileOut = new BufferedOutputStream(new FileOutputStream("D:\\Normal\\迅雷下载\\JiuYin.zip"));
 		byte[] buffer = new byte[1024];
 		int len = -1;
 		while((len=in.read(buffer))!=-1){
